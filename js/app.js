@@ -30,7 +30,7 @@
 
     //-------------------------------------------------
 
-    function cambiarDom () {
+    function cambiarDom () {            //  Se define una funcion
         const titulo1 = document.getElementById ('titulo1');
         const parrafo1 = document.getElementById ('parrafo1');
         const titulo2 = document.getElementById ('titulo2');
@@ -40,15 +40,23 @@
 
         titulo1.textContent = 'Nuevo Titulo'
         parrafo1.innerHTML = ' Nuevo texto del parrafo'
+        parrafo2.innerHTML = ' Nuevo texto del parrafo PARRAFO2'
+
     }
 
-    function otrafuncion () {
+    function otrafuncion () {           
         const contenedor2 = document.getElementById ("contenedor2")
         contenedor2.innerHTML = "<h1 id='titulo3'>titulo de inherhtml</h1>  <p> parrafo deL COntenedor</p>"
- 
-
+        // Cambiar estilos
+        const caja = document.querySelector('.miClase');
+        caja.style.backgroundColor = 'blue';
     }
-    
+
+    function cambiarRuta () {
+        const enlace = document.querySelector('a');
+        enlace.setAttribute ("href", "https://www.vanguardia.com")
+    }
+
 
 
 
