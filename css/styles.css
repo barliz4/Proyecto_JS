@@ -2,24 +2,114 @@ body {
     text-align: center;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:rgb(226, 226, 226);
+    background-color:rgb(13, 97, 5);
+    margin: 40px;
+}
+
+h1 {
+    color: rgb(255, 255, 255); 
+    font-size: 48px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+    font-weight: bold; /* Negrita para destacar más el título */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras para mejorar la legibilidad */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Sombra suave para hacer el texto más legible */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+    transition: all 0.3s ease; /* Transición para cambios  */
+}
+
+
+h1:hover {
+    color: #175f27; 
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada*/
+    transform: scale(1.05);   /* Aumentar ligeramente el tamaño al pasar el ratón */
 }
 
 #contenedor1 {
-    background-color: rgb(166, 175, 35);
+    background-color: rgb(189, 2, 2);
     text-align: center;
 }
 
 #contenedor2 {
-    background-color: rgb(68, 101, 104);
+    background-color: rgb(121, 8, 8);
     text-align: center;
 }
 
 button {
-    background-color: rgb(114, 153, 102);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333; /* Mejor contraste para el texto */
     cursor: pointer;
-    border-radius: 4px;
-    padding: 8px;
-    font-size: 15px;
+    border-radius: 12px;
+    padding: 12px 20px; /* Mejor tamaño y espaciado */
+    font-size: 16px;
+    font-family: monospace, sans-serif; /* Añadí una fuente secundaria por si la primera no está disponible */
+    border: 2px solid #ccc; /* Borde sutil */
+    transition: all 0.3s ease; /* Transición suave para interacciones */
+}
 
+button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Cambio de fondo al pasar el mouse */
+    color: #000; /* Texto más oscuro en hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+button:focus {
+    outline: none; /* Remueve el borde de enfoque */
+    box-shadow: 0 0 0 4px rgb(255, 0, 0); /* Añadir un borde azul al hacer focus */
+}
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.548); /* Fondo ligeramente más oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto de "presionar" el botón */
+}
+
+
+
+p {
+    font-size: 20px; /* Tamaño un poco más pequeño para un párrafo, mejor legibilidad */
+    color: rgba(214, 222, 230, 0.9); /* Colores más sólidos para mejor contraste */
+    line-height: 1.6; /* Mejora el espaciado entre líneas para mejor lectura */
+    font-family: 'Arial', sans-serif; /* Fuente más limpia y legible */
+    margin: 15px 0; /* Espaciado superior e inferior */
+    padding: 0 10px; /* Espaciado interno para no pegar el texto a los bordes */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para efectos */
+}
+
+p:hover {
+    color: rgba(214, 222, 230, 1); /* Color más intenso al pasar el ratón */
+    transform: scale(1.02); /* Efecto de aumento ligeramente al pasar el ratón */
+}
+
+p:focus {
+    outline: none; /* Remueve el borde al hacer focus */
+    border-left: 3px solid #ffcc00; /* Añadir un borde izquierdo para foco visual */
+    padding-left: 12px; /* Espaciado adicional cuando está enfocado */
+}
+
+
+
+a {
+    color: rgb(0, 0, 0); /* Color base del enlace */
+    cursor: pointer;
+    text-decoration: none; /* Remueve la decoración de subrayado por defecto */
+    font-weight: 500; /* Un poco de grosor en el texto para hacerlo más visible */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para cambios */
+}
+
+a:hover {
+    color: #007bff; /* Color de texto cambia a azul al pasar el ratón */
+    text-decoration: underline; /* Subrayado al hacer hover */
+    transform: scale(1.05); /* Efecto de aumento para mayor interactividad */
+}
+
+a:focus {
+    outline: none; /* Remueve el borde de enfoque predeterminado */
+    border-bottom: 3px solid #ffcc00; /* Subrayado con un color brillante cuando tiene foco */
+    padding-bottom: 2px; /* Espaciado adicional para que el borde no se vea apretado */
+}
+
+a:active {
+    color: #0056b3; /* Color más oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto de "presionar" el enlace */
 }

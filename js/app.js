@@ -57,6 +57,14 @@
         enlace.setAttribute ("href", "https://www.vanguardia.com")
     }
 
+    function mover () {
+        contenedor.style.marginLeft = "0px"
+        contenedor.style.backgroundColor = "red"
+        const nuevoDiv = document.createElement ('div');
+        nuevoDiv.textContent = 'Soy un nuevo DIV';
+        document.body.appendChild(nuevoDiv);
+    }
+
 
 
 
